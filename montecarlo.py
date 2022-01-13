@@ -8,7 +8,7 @@ def main():
     x, y = gen_rand(num_samples)
     for i in range(num_samples):
         r = (x[i]**2 + y[i]**2)**0.5
-        if r < 1:
+        if r <= 1:
             circle += 1
     computed_pi = 4 * circle / num_samples #Area of circle  / Area of Square = pi / 4
     return computed_pi, num_samples
